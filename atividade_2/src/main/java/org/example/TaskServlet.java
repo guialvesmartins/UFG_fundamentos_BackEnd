@@ -18,7 +18,7 @@ public class TaskServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/plain");
         if (taskList.isEmpty()) {
-            response.getWriter().println("Nenhuma tarefa disponível.");
+            response.getWriter().println("Não há nenhuma tarefa disponível.");
             return;
         }
         for (int i = 0; i < taskList.size(); i++) {

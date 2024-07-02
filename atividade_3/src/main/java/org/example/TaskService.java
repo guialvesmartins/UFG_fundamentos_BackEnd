@@ -9,7 +9,7 @@ public class TaskService {
     SMSNotificacaoService smsNotificacaoService = new SMSNotificacaoService();
     private ArrayList<String> taskList = new ArrayList<>();
     public String list() throws FileNotFoundException {
-        if (taskList.isEmpty())  throw new FileNotFoundException( "Não há tarefas disponíveis!" );
+        if (taskList.isEmpty())  throw new FileNotFoundException( "Não há nenhuma tarefa disponível!" );
 
         String result = "";
         for(int i = 0; i < taskList.size(); i++)

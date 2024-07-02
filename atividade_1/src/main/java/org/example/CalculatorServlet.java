@@ -36,7 +36,7 @@ public class CalculatorServlet extends HttpServlet {
                     response.getWriter().println("Verifique se a oeração está correta! São aceitos os valores 'soma', 'subtracao', 'multiplicacao' e 'divisao'");
                     return;
             }
-            response.getWriter().println( "O resultado dessa " + operacao + " é: " + resultado);
+            response.getWriter().println( "O resultado dessa " + operacao + " é igual a: " + resultado);
         } catch (Exception e) {
             response.getWriter().println( "Verifique se os parâmetros de entrada estão corretos!");
         }
